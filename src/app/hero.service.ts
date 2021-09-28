@@ -11,6 +11,7 @@ import { MessageService } from './message.service';
   providedIn: 'root'
 })
 export class HeroService {
+  private heroesUrl = 'api/heroes'; // URL to web api
 
   getHeroes(): Observable<Hero[]> {
     const heroes = of(HEROES);
